@@ -1,4 +1,4 @@
-# 二分探索
+# 二分探索ラッパー
 
 class Array
     def lt(x)           # x未満の最も近い要素，なければnil
