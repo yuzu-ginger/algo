@@ -88,7 +88,7 @@ class OrderedMultiSet
   end
 
 
-  # xより大きい最も近い値(less than)
+  # xより小さく最も近い値(less than)
   def lt(x)
     @a.reverse_each do |a|
       return a[(a.bsearch_index {|aj| aj >= x}||a.size) - 1] if a[0] < x
@@ -231,7 +231,7 @@ set = OrderedMultiSet.new(a)
 p set
 set.add(5) # 5 を追加
 set.add(6) # 6 を追加
-set.delete(7) # 7を追加
+set.delete(7) # 7を削除
 p set
 p set.size # 全体の個数
 p set.nth(1)
