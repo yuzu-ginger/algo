@@ -81,7 +81,7 @@ class OrderedSet
 
 
 
-  # xより大きく最も近い値(less than)
+  # xより小さく最も近い値(less than)
   def lt(x)
     @a.reverse_each do |a|
       return a[(a.bsearch_index {|aj| aj >= x}||a.size) - 1] if a[0] < x
