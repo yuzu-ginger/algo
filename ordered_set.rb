@@ -221,7 +221,7 @@ p set # => OrderedSet[1, 4, 6, 7, 20]
 
 set.add(5) # 5 を追加
 set.add(6) # 6 を追加
-set.delete(7) # 7を追加
+set.delete(7) # 7を削除
 # 重複要素の6はさらに追加されない
 p set # => OrderedSet[1, 4, 5, 6, 20]
 p set.size # 全体の個数 5
