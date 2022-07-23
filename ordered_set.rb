@@ -123,7 +123,7 @@ class OrderedSet
     end
     ans
   end
-  # xより小さい要素数を数える。lteqはless than or equal
+  # x以下の要素数を数える。lteqはless than or equal
   def count_lteq(x)
     ans = 0
     @a.each do |a|
