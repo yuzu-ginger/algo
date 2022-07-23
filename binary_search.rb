@@ -49,7 +49,7 @@ class Array
         end
     end
     
-    def near_index(x)   # xに最も近い要素の個数
+    def near_index(x)   # xに最も近い要素の場所
         num = self.bsearch_index{|i| i >= x} || self.size - 1
         num_1 = [num - 1, 0].max
         if (self[num_1] - x).abs >= (self[num] - x).abs
@@ -125,8 +125,8 @@ p ar.gtep(x)         # 要素
 p ar.gtep_index(x)   # 場所
 
 # xに最も近いもの
-p ar.near(x)
-p ar.near_index(x)
+p ar.near(x)         # 要素
+p ar.near_index(x)   # 場所
 
 # x未満の個数
 p ar.count_lt(x)
