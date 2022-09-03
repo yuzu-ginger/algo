@@ -33,3 +33,20 @@ class UnionFind
         return find_root(x) == find_root(y)
     end
 end
+
+# 使用時はこの上の部分をコピペする
+#-------------------------------------------
+# 以下使用例
+uni = UnionFind.new(10)
+
+# 木を併合
+uni.unite(1, 2)
+
+# 親(根)を返す
+p uni.find_root(1)
+
+# 同じ木かどうかを返す
+p uni.same?(1, 2)
+
+# サイズを返す
+p uni.size(1)
